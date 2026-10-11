@@ -1,0 +1,13 @@
+# Project Structure
+- **package.json** รวบรวม dependencies และ scripts ทั้งหมดที่จะต้องใช้ในแอบพลิเคชัน
+- **next.config.js** ตั้งค่า nextjs 
+- **tsconfig.json** ตั้งค่า typescript
+- **eslint.config.mjs** ตั้งค่า eslint
+- **(folder) .next** ถูกสร้างขึ้นเมื่อเราเรียกใช้งานคำสั่ง next dev หรือ next build โดยจัดเก็บแอบพลิเคชันที่ถูก build แล้ว
+- **(folder) node_module** จัดเก็บ dependency ทั้งหมด
+- **(folder) public** จัดเก็บเนื้อหาที่อยู่ในรูปแบบ static เช่น รูปภาพ
+- **(folder) app** จัดเก็บแอพพลิเคชันที่เรากำลังพัฒนา โดยด้านในจะประกอบด้วย
+    - **favicon.ico** ไอคอนของแอพ
+    - **globals.css** จัดเก็บ style ที่สามารถใช้ได้ทั้งแอพ
+    - **layout.tsx** เป็น component แรกของแอพพลิเคชันที่ถูกเรียกใช้งาน
+    - **page.tsx** component แรกที่ถูกสร้างขึ้น
